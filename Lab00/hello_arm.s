@@ -2,8 +2,8 @@
 // CS 271 Computer Architecture - Lab 00: Introduction to ARM Assembly
 // Purdue University Fort Wayne
 // =============================================================================
-// STUDENT NAME: ___________________
-// DATE:         ___________________
+// STUDENT NAME: ___Kenny Simon____________
+// DATE:         ___1/21/26________________
 // =============================================================================
 //
 // LEARNING OBJECTIVES:
@@ -52,6 +52,7 @@ _start:
     //
     // YOUR CODE HERE:
 
+    MOV     X3, #25         // X3 = 25
 
     // -------------------------------------------------------------------------
     // EXERCISE 2: Perform addition
@@ -61,6 +62,7 @@ _start:
     //
     // YOUR CODE HERE:
 
+    ADD     X4, X2, X3      //X4 = 15 + 25 = 40
 
     // -------------------------------------------------------------------------
     // EXERCISE 3: Perform subtraction
@@ -71,6 +73,7 @@ _start:
     //
     // YOUR CODE HERE:
 
+    SUB     X5, X0, X1      //X5 = 10 - 5 = 5
 
     // -------------------------------------------------------------------------
     // EXERCISE 4: Create your own calculation
@@ -81,6 +84,9 @@ _start:
     //
     // YOUR CODE HERE:
 
+    ADD     X6, X4, X4      //X6 = 40 + 40 = 80
+    ADD     X6, X6, X3      //X6 = 80 + 25 = 105
+    SUB     X6, X6, X5      //X6 = 105 - 5 = 100
 
     // =========================================================================
     // PROGRAM TERMINATION
